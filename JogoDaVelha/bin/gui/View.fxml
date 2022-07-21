@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="conteiner" prefHeight="599.0" prefWidth="485.0" style="-fx-background-color: black;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewController">
+      <Button fx:id="btnReset" alignment="CENTER" layoutX="166.0" layoutY="511.0" mnemonicParsing="false" onAction="#clean" prefHeight="29.0" prefWidth="147.0" text="RESET" AnchorPane.bottomAnchor="14.0" />
+      <StackPane AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Line fx:id="line" fill="RED" startX="380.0" stroke="#dd0808" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="5.0" />
+            <VBox alignment="CENTER" spacing="20.0" StackPane.alignment="CENTER">
+               <children>
+                  <VBox fx:id="grid">
+                     <children>
+                        <HBox>
+                           <children>
+                              <Button id="1" fx:id="btn1" mnemonicParsing="false" prefHeight="130.0" prefWidth="130.0" text="1">
+                                 <font>
+                                    <Font name="Georgia" size="30.0" />
+                                 </font>
+                              </Button>
+                              <Line endY="130.0" stroke="WHITE" strokeWidth="5.0" />
+                              <Button fx:id="btn2" mnemonicParsing="false" prefHeight="130.0" prefWidth="130.0" text="2" />
+                              <Line endY="130.0" stroke="WHITE" strokeWidth="5.0" />
+                              <Button fx:id="btn3" mnemonicParsing="false" prefHeight="130.0" prefWidth="130.0" text="3" />
+                           </children>
+                        </HBox>
+                        <Line endX="390.0" stroke="WHITE" strokeWidth="5.0" />
+                        <HBox>
+                           <children>
+                              <Button fx:id="btn4" mnemonicParsing="false" prefHeight="130.0" prefWidth="130.0" text="4" />
+                              <Line endY="130.0" stroke="WHITE" strokeWidth="5.0" />
+                              <Button fx:id="btn5" mnemonicParsing="false" prefHeight="130.0" prefWidth="130.0" text="5" />
+                              <Line endY="130.0" stroke="WHITE" strokeWidth="5.0" />
+                              <Button fx:id="btn6" mnemonicParsing="false" prefHeight="130.0" prefWidth="130.0" text="6" />
+                           </children>
+                        </HBox>
+                        <Line endX="390.0" layoutX="13.0" layoutY="148.0" stroke="WHITE" strokeWidth="5.0" />
+                        <HBox>
+                           <children>
+                              <Button fx:id="btn7" mnemonicParsing="false" prefHeight="130.0" prefWidth="130.0" text="7" />
+                              <Line endY="130.0" stroke="WHITE" strokeWidth="5.0" />
+                              <Button fx:id="btn8" mnemonicParsing="false" prefHeight="130.0" prefWidth="130.0" text="8" />
+                              <Line endY="130.0" stroke="WHITE" strokeWidth="5.0" />
+                              <Button fx:id="btn9" mnemonicParsing="false" prefHeight="130.0" prefWidth="130.0" text="9" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+</AnchorPane>
